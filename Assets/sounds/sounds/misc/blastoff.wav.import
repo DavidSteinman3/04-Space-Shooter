@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/blastoff.wav-c53671b8f4851ed52461133c13ff135d.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/sounds/misc/blastoff.wav"
+dest_files=[ "res://.import/blastoff.wav-c53671b8f4851ed52461133c13ff135d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

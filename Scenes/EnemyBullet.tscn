@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/EnemyBullet.gd" type="Script" id=1]
+[ext_resource path="res://Assets/spaceArt/png/laserGreenShot.png" type="Texture" id=2]
+
+[node name="EnemyBullet" type="RigidBody2D"]
+collision_layer = 20
+collision_mask = 20
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 6, -22, 6.8, -15, 10.2, -18, 14.8, -18, 18, -14.8, 18, -10.5, 16.3, -7, 21.2, -7, 28, -5.6, 28, 6, 22.4, 6, 15, 7.6, 18, 9.9, 18, 14.8, 14.8, 18, 10.5, 18, 7, 16.3, 7, 22.3, 5.4, 27, -6, 27, -6, 22, -6.8, 15, -10.2, 18, -14.8, 18, -18, 14.8, -18, 9.9, -15, 7.9, -15, 7, -22.5, 7, -28, 4.2, -28, -5.1, -15, -6.8, -15, -8.5, -18.3, -14, -17.2, -16, -15.5, -16, -9, -19.2, -9, -16.4, -7, -15.8, -7, -22.5, -5, -26.5, 6, -27 )

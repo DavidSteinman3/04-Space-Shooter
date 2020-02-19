@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Meteor.gd" type="Script" id=1]
+[ext_resource path="res://Assets/spaceArt/png/meteorBig.png" type="Texture" id=2]
+
+[node name="Meteor" type="RigidBody2D"]
+collision_layer = 5
+collision_mask = 5
+gravity_scale = 0.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 75.9985, -113.998 )
+scale = Vector2( 0.780139, 0.764293 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 75.9985, -113.998 )
+scale = Vector2( 0.780139, 0.764293 )
+polygon = PoolVector2Array( 65, -17.4, 65, -11.5, 68, 0.299999, 68, 37.3, 65.8, 39.5, 62.5, 39.5, 28.4, 55.5, 7, 55.5, 7, 53.5, -20.7, 32.5, -57, 32.5, -57, 29.9, -68, 6.2, -68, -12.6, -45.1, -46.5, -40.1, -46.5, -1.6, -55.5, 21, -55.5 )

@@ -1,2 +1,2 @@
-# 04-Space-Shooter
-Space shooter game in Godot: David Steinman
+# Project-Template-Godot
+A default Godot project template for MSCH-C220

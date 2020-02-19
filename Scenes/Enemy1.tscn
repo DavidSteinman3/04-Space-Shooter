@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://Assets/spaceArt/png/enemyShip.png" type="Texture" id=2]
+
+[node name="Enemy1" type="KinematicBody2D"]
+editor/display_folded = true
+position = Vector2( 0, -100 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 49, -16.5, 49, 6, 46.9, 6, 30.9, 25, 15, 25, 15, 21.6, 21.3, 4.6, 13.2, 19, -13.2, 19, -21.2, 3, -22.3, 2.6, -14.1, 25, -32, 25, -32, 22.7, -49, 4, -49, -15, -45, -24.3, -45, -25, -27, -25, -18.6, -23.3, -16.3, -25, 16.2, -25, 20.1, -23.7, 29.1, -25, 45, -25 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Tween" type="Tween" parent="."]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
